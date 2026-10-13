@@ -3,98 +3,283 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Game Dev Portfolio</title>
-        <!-- Favicon-->
+        <meta name="description" content="VR projects by Patricio Landa: networked co-op VR shooter (Photon Fusion 2), VR horror game with gesture recognition, VR medical simulation for Meta Quest 3." />
+        <meta name="author" content="Patricio Landa" />
+        <meta property="og:title" content="Projects — Patricio Landa" />
+        <meta property="og:description" content="Networked VR co-op, gesture-driven VR horror, VR medical simulation on Quest 3." />
+        <meta property="og:image" content="https://plandaa.github.io/assets/og-image.jpg" />
+        <meta property="og:url" content="https://plandaa.github.io/projects.html" />
+        <title>Projects — Patricio Landa</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
+        <a class="skip-link" href="#main">Skip to content</a>
+        <main class="flex-shrink-0" id="main">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3" aria-label="Main">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Game Dev</span></a>
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Patricio Landa</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-2 g-4">
-                        <div class="col">
-                          <div class="card shadow rounded-4 border-0 mb-5 bg-light">
-                            <img src="./assets/slash_game.gif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Slash Game, 2024 Unreal Engine 5</h5>
-                                <ul class="card-text">
-                                    <li>Full C++ implementation using reflection system, interfaces, data structures, inheritance and polymorphism</li>
-                                </ul>
-                                <a href="./projects/slash_game.html" class="btn btn-primary">Read more</a>
+
+            <div class="container px-5 my-5">
+                <div class="text-center mb-4">
+                    <h1 class="display-5 fw-bolder mb-3"><span class="text-gradient d-inline">Projects</span></h1>
+                    <p class="text-muted mb-0">Jump to:
+                        <a href="#zombies">VR Survival Zombies</a> ·
+                        <a href="#run">RUN</a> ·
+                        <a href="#vml">VR Medical Simulation</a> ·
+                        <a href="#ari">ARI Group</a> ·
+                        <a href="#papalote">Papalote</a> ·
+                        <a href="#unreal">Unreal / C++</a> ·
+                        <a href="#earlier">Earlier work</a>
+                    </p>
+                </div>
+
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+
+                        <!-- ===================== 1. VR SURVIVAL ZOMBIES ===================== -->
+                        <section id="zombies" class="card overflow-hidden shadow rounded-4 border-0 mb-5 bg-white">
+                            <div class="media-16x9">
+                                <iframe src="https://www.youtube-nocookie.com/embed/94sn5fN1GrI" title="VR Survival Zombies — trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="card shadow rounded-4 border-0 mb-5 bg-light">
-                            <img src="./assets/fps.gif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Frequency based FPS, Unity 2022-2023</h5>
-                                <ul class="card-text">
-                                    <li>Used Fourier Transform to obtain frequencies from any song and used them for controlling the entire gameplay</li>
+                            <div class="p-5">
+                                <h2 class="fw-bolder">VR Survival Zombies</h2>
+                                <p class="text-muted">2-player co-op VR shooter for Meta Quest · Personal project, 2025–2026 · In review on the Meta Quest Store and SideQuest</p>
+
+                                <h3 class="fs-5 fw-bolder mt-4">My contribution</h3>
+                                <p>Sole developer: architecture, netcode, VR interactions, zombie AI, VFX, tests and Quest profiling.</p>
+                                <ul>
+                                    <li>Networked weapon pickup, two-handed handling and reloading on AutoHand physics hands, with state authority transferred between players in Photon Fusion 2 Shared Mode.</li>
+                                    <li>Throwable grenades with physics synchronized across clients.</li>
+                                    <li>Wave-based zombie AI on NavMesh, simulated by the session master and replicated to the second player.</li>
+                                    <li>Networked full-body IK avatars: head and hand targets are replicated and each client solves the IK locally, instead of sending bone data.</li>
+                                    <li>Unit tests with the Unity Test Framework for the scalability-sensitive systems; playtest sessions to find and fix gameplay and network bugs.</li>
+                                    <li>Custom VFX built within the Quest frame budget; profiled on device to hold the target framerate.</li>
                                 </ul>
-                                <a href="./projects/fps.html" class="btn btn-primary">Read more</a>
+
+                                <h3 class="fs-5 fw-bolder mt-4">Stack</h3>
+                                <ul class="stack-list">
+                                    <li>Unity 6</li><li>C#</li><li>Photon Fusion 2 (Shared Mode)</li><li>AutoHand</li><li>Meta Quest</li><li>OpenXR</li><li>NavMesh</li><li>Unity Test Framework</li><li>Git</li>
+                                </ul>
+
+                                <h3 class="fs-5 fw-bolder mt-4">Main technical challenge</h3>
+                                <p>Keeping physics-driven interactions consistent for both players. A grenade thrown by one player has to land in the same place for the other, and a rifle grabbed from a teammate has to change authority without snapping. I documented each networked system in the README: when to use replicated state vs. RPCs, how authority transfer works in Shared Mode, why there is no lag compensation in that mode, and the interpolation asymmetry between the owning client and the proxy, measured under simulated latency.</p>
+
+                                <!-- TODO: screenshot of the grenade / authority-transfer code -->
+                                <!-- <img src="assets/zombies_code.png" class="code-shot my-3" alt="C# code: networked grenade with synchronized physics" loading="lazy" width="1200" height="700" /> -->
+
+                                <h3 class="fs-5 fw-bolder mt-4">Links</h3>
+                                <p class="mb-0">
+                                    <a class="btn btn-primary btn-sm me-2" href="https://youtu.be/94sn5fN1GrI">Trailer</a>
+                                    <a class="btn btn-outline-dark btn-sm me-2" href="https://github.com/PLandaA/VRZombies">GitHub + README</a>
+                                </p>
                             </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow rounded-4 border-0 mb-5 bg-light">
-                                <img src="./assets/run_vr.gif" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Horror VR Game, Unity 2022</h5>
-                                    <ul class="card-text">
-                                        <li>Horror virtual reality game using Unity's XR toolkit plugin</li>
-                                    </ul>
-                                    <a href="./projects/run_vr.html" class="btn btn-primary">Read more</a>
+                        </section>
+
+                        <!-- ===================== 2. RUN (VR HORROR) ===================== -->
+                        <section id="run" class="card overflow-hidden shadow rounded-4 border-0 mb-5 bg-white">
+                            <img src="assets/run_vr.gif" class="card-img-top" alt="Gameplay of RUN: a flashlight lights a dark corridor while a creature approaches" loading="lazy" width="1280" height="720" />
+                            <div class="p-5">
+                                <h2 class="fw-bolder">RUN — VR Horror Game</h2>
+                                <p class="text-muted">Unity 6 + XR Interaction Toolkit 3 · Team of 2 · Published on itch.io</p>
+
+                                <h3 class="fs-5 fw-bolder mt-4">My contribution</h3>
+                                <p>Gameplay programming and the 2025 engine migration. Made with Guillermo Vega, who recorded the gameplay footage.</p>
+                                <ul>
+                                    <li>Gesture-driven mechanics: integrated the $P point-cloud recognizer to classify in-air hand strokes as input (gesture locomotion, flashlight recharge), with confidence thresholds and runtime template training.</li>
+                                    <li>Physics-based climbing driven by hand velocity, built on XRI 3's interactor handedness model, that cleanly takes over from locomotion.</li>
+                                    <li>Migrated the project from deprecated XRController APIs to Unity 6, XRI 3.3 and OpenXR.</li>
+                                    <li>NavMesh enemy AI and a resource-driven flashlight loop.</li>
+                                </ul>
+
+                                <h3 class="fs-5 fw-bolder mt-4">Stack</h3>
+                                <ul class="stack-list">
+                                    <li>Unity 6</li><li>C#</li><li>XR Interaction Toolkit 3</li><li>OpenXR</li><li>$P recognizer</li><li>NavMesh</li>
+                                </ul>
+
+                                <h3 class="fs-5 fw-bolder mt-4">Main technical challenge</h3>
+                                <p>Turning noisy controller trajectories into reliable gameplay input. A stroke has to be recognized as "run" quickly enough to feel responsive, but not so loosely that reaching for the flashlight triggers it. The answer was a template-based classifier with a tuned confidence threshold and the ability to record new templates at runtime.</p>
+
+                                <!-- TODO: screenshot of the gesture-recognition or climbing code -->
+                                <!-- <img src="assets/run_code.png" class="code-shot my-3" alt="C# code: $P gesture classification with confidence threshold" loading="lazy" width="1200" height="700" /> -->
+
+                                <h3 class="fs-5 fw-bolder mt-4">Links</h3>
+                                <p class="mb-0">
+                                    <a class="btn btn-primary btn-sm me-2" href="https://andralandev.itch.io/run">Play on itch.io</a>
+                                    <a class="btn btn-outline-dark btn-sm me-2" href="https://github.com/PLandaA/RUN">GitHub + README</a>
+                                </p>
+                            </div>
+                        </section>
+
+                        <!-- ===================== 3. VML ===================== -->
+                        <section id="vml" class="card shadow rounded-4 border-0 mb-5 bg-white">
+                                                        <div class="p-5">
+                                <h2 class="fw-bolder">VR Anesthesiology Simulation</h2>
+                                <p class="text-muted">Virtual Medical Learning · Unity VR Developer · June 2024 – June 2025 · Meta Quest 3</p>
+
+                                <h3 class="fs-5 fw-bolder mt-4">My contribution</h3>
+                                <p>Took features from concept through implementation, on-device testing and release, working directly with medical advisors to translate clinical requirements into VR interactions.</p>
+                                <ul>
+                                    <li>Spatial interaction systems: constrained free-hand ultrasound probe movement to anatomical splines via vector projection, driving position-indexed ultrasound imagery that stayed in sync with the probe.</li>
+                                    <li>Instrument handling, controlled strokes and haptic feedback built on Unity's New Input System; Observer pattern, interfaces and event-driven architecture to decouple systems.</li>
+                                    <li>Integrated and configured AutoHand 4, Quest Machine, Dialogue System and Odin Inspector to speed up the pipeline.</li>
+                                    <li>Profiled and optimized on Quest 3 to hold the target framerate.</li>
+                                    <li>Presented the simulation to medical audiences and turned their feedback into iterations.</li>
+                                </ul>
+
+                                <h3 class="fs-5 fw-bolder mt-4">Stack</h3>
+                                <ul class="stack-list">
+                                    <li>Unity</li><li>C#</li><li>Meta Quest 3</li><li>New Input System</li><li>AutoHand 4</li><li>Quest Machine</li><li>Dialogue System</li><li>Odin Inspector</li><li>Haptics</li><li>Unity Profiler</li>
+                                </ul>
+
+                                <h3 class="fs-5 fw-bolder mt-4">Main technical challenge</h3>
+                                <p>The ultrasound transducer. Physicians move the probe freely, but the image shown has to correspond to a real anatomical position. I projected the hand position onto a spline that follows the anatomy, used the resulting parameter to index the imagery, and kept the probe visually attached to the body without fighting the user's hand.</p>
+
+                                <!-- TODO: screenshot of the spline-projection code -->
+                                <!-- <img src="assets/vml_code.png" class="code-shot my-3" alt="C# code: projecting the probe position onto an anatomical spline" loading="lazy" width="1200" height="700" /> -->
+
+                                <h3 class="fs-5 fw-bolder mt-4">Links</h3>
+                                <p class="mb-0">
+                                    <a class="btn btn-primary btn-sm me-2" href="https://vml.solutions/">Virtual Medical Learning</a>
+                                </p>
+                                <p class="small text-muted mt-3 mb-0">Showcased at an international anesthesiology congress and used by practicing physicians. The application is proprietary to VML; happy to walk through the architecture in a conversation.</p>
+                            </div>
+                        </section>
+
+                        <!-- ===================== 4. ARI GROUP ===================== -->
+                        <section id="ari" class="card shadow rounded-4 border-0 mb-5 bg-white">
+                            <div class="p-5">
+                                <h2 class="fw-bolder">Educational Unity WebGL games</h2>
+                                <p class="text-muted">ARI Group · Lead Game Developer, team of 3 · September 2024 – present</p>
+
+                                <h3 class="fs-5 fw-bolder mt-4">My contribution</h3>
+                                <ul>
+                                    <li>Lead a team of 3 designers using Agile with Planner for sprints: architecture, task assignment, code reviews, coding standards and mentoring.</li>
+                                    <li>Ship Unity WebGL educational titles to production on a monthly cadence, architected with SOLID principles and reusable design patterns across the portfolio.</li>
+                                    <li>Built reusable gameplay systems: drag-and-drop frameworks, audio-driven selection, platforming physics and state-managed gameplay loops.</li>
+                                    <li>Own the WebGL build pipeline and deployment, and maintain the shipped portfolio: bug fixing, new mechanics and refactors.</li>
+                                </ul>
+
+                                <h3 class="fs-5 fw-bolder mt-4">Stack</h3>
+                                <ul class="stack-list">
+                                    <li>Unity</li><li>C#</li><li>WebGL build pipeline</li><li>Agile / Planner</li><li>Git</li><li>Code review</li>
+                                </ul>
+
+                                <h3 class="fs-5 fw-bolder mt-4">Main technical challenge</h3>
+                                <p>Shipping on a fixed monthly cadence with a small team. The answer was a shared codebase of reusable systems and clear coding standards, so each new title reuses more than it rewrites.</p>
+                                <!-- TODO: add a demo reel link if one becomes public -->
+                            </div>
+                        </section>
+
+                        <!-- ===================== 5. PAPALOTE ===================== -->
+                        <section id="papalote" class="card shadow rounded-4 border-0 mb-5 bg-white">
+                            <div class="p-5">
+                                <h2 class="fw-bolder">Interactive museum exhibits and AR</h2>
+                                <p class="text-muted">Papalote Museo del Niño, Mexico City · Developer Intern · January – July 2024</p>
+
+                                <h3 class="fs-5 fw-bolder mt-4">My contribution</h3>
+                                <ul>
+                                    <li>Architected from scratch "El universo dentro de mí", an interactive drag-and-drop exhibit with video synchronization and hardware integration, deployed in the museum.</li>
+                                    <li>Took ownership of an existing AR educational game about human body systems, refactored it, optimized it and shipped it.</li>
+                                    <li>Set up the GitLab CI/CD pipeline and supervised one developer: code reviews and milestone coordination.</li>
+                                </ul>
+
+                                <h3 class="fs-5 fw-bolder mt-4">Stack</h3>
+                                <ul class="stack-list">
+                                    <li>Unity</li><li>C#</li><li>AR Foundation</li><li>GitLab CI/CD</li>
+                                </ul>
+
+                                <h3 class="fs-5 fw-bolder mt-4">Main technical challenge</h3>
+                                <p>Content that has to land correctly in a real environment for visitors who will never troubleshoot it: anchoring and aligning AR content to physical surfaces in a public installation, and keeping a video-synced exhibit running all day without supervision.</p>
+                            </div>
+                        </section>
+
+                        <!-- ===================== 6. UNREAL / C++ ===================== -->
+                        <section id="unreal" class="mb-5">
+                            <h2 class="fw-bolder text-center mb-2"><span class="text-gradient d-inline">Unreal Engine 5 / C++</span></h2>
+                            <p class="text-muted text-center mb-4">Second engine. Personal and academic projects.</p>
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                    <div class="card overflow-hidden shadow rounded-4 border-0 h-100 bg-white">
+                                        <div class="media-16x9">
+                                            <iframe src="https://www.youtube-nocookie.com/embed/byFRPpan8Fc" title="Unreal Engine 5 FPS — Unreal Championship 2023" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="fs-5 fw-bolder">First-Person Shooter</h3>
+                                            <p class="small text-muted">Unreal Championship 2023 · C++</p>
+                                            <ul class="small">
+                                                <li>Cellular automaton grid in C++: RGB tiles that change over time control which enemies are vulnerable; players must stand on the matching tile to deal damage.</li>
+                                                <li>Weapon, enemy and pickup systems in C++ with Blueprints for tuning.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                        </div>
-                        <div class="col">
-                          <div class="card shadow rounded-4 border-0 mb-5 bg-light">
-                            <img src="./assets/IA.gif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Tower Defense Game</h5>
-                              <ul class="card-text">
-                                <li>State machines, desition tree for enemies and steering behaviors implementation</li>
-                              </ul>
-                              <a href="./projects/ia_game.html" class="btn btn-primary">Read more</a>
+                                <div class="col">
+                                    <div class="card overflow-hidden shadow rounded-4 border-0 h-100 bg-white">
+                                        <div class="media-16x9">
+                                            <iframe src="https://www.youtube-nocookie.com/embed/geAMwS_lwBI" title="Unreal Engine 5 3D platformer — Tec de Monterrey diploma" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="fs-5 fw-bolder">3D Platformer</h3>
+                                            <p class="small text-muted">Tec de Monterrey UE5 diploma · Blueprints</p>
+                                            <ul class="small">
+                                                <li>Character controller, moving platforms and collectibles in Blueprints.</li>
+                                                <li>Niagara VFX, Sequencer cinematics, Chaos destruction, lighting and world building.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        </div>
+                        </section>
+
+                        <!-- ===================== 7. EARLIER WORK ===================== -->
+                        <section id="earlier" class="card shadow rounded-4 border-0 mb-5 bg-white">
+                            <div class="p-5">
+                                <h2 class="fw-bolder">Earlier work</h2>
+                                <p class="text-muted">Academic projects, playable on itch.io.</p>
+                                <ul class="mb-0">
+                                    <li><a href="https://andralandev.itch.io/frequencybasedfps">Frequency Based FPS</a> (thesis, Unity): a Fourier transform extracts frequency bands from any song and drives the gameplay: low frequencies move the platforms, mid frequencies set enemy spawn rate, high frequencies change the environment. Grappling hook, NavMesh enemies and boss state machines.</li>
+                                    <li><a href="https://andralandev.itch.io/">More on itch.io</a>: a tower defense with custom steering behaviors and decision trees, and game jam entries.</li>
+                                </ul>
+                            </div>
+                        </section>
+
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
-        <!-- Bootstrap core JS-->
+
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">&copy; 2026 Patricio Landa</div></div>
+                    <div class="col-auto">
+                                                <a class="small" href="https://www.linkedin.com/in/patricio-landa-andraca-a8a669201/">LinkedIn</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="https://github.com/PLandaA">GitHub</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="https://andralandev.itch.io/">itch.io</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
     </body>
 </html>
